@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Admin – LocalDrop</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+
+<body>
+<h1>Panel Admina</h1>
+
+<button id="add-case">Dodaj skrzynkę</button>
+<div id="cases-list"></div>
+
+<div id="modal" class="hidden">
+    <div class="modal-box">
+        <h2 id="modal-title"></h2>
+        <input id="case-name" placeholder="Nazwa">
+        <input id="case-price" placeholder="Cena">
+        <input id="case-image" placeholder="URL obrazka">
+        <button id="save-case">Zapisz</button>
+        <button onclick="closeModal()">Anuluj</button>
+    </div>
+</div>
+
+<script src="admin.js"></script>
+</body>
+</html>
