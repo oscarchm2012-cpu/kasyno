@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #0e0e11;
+    color: #fff;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 25px;
+    background: #131318;
+    border-bottom: 1px solid #292930;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar li {
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 260px);
+    gap: 20px;
+    padding: 25px;
+}
+
+.case-card {
+    background: #1a1a22;
+    border-radius: 10px;
+    padding: 15px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.case-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #00aaff;
+}
+
+.case-card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+#case-opening-modal {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.85);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#rolling-strip {
+    width: 1400px;
+    height: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+#rolling-strip img {
+    height: 180px;
+    margin: 0 15px;
+    filter: drop-shadow(0 0 8px #000);
+}
