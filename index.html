@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>LocalDrop – Free CS2 Case Opening</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="logo">LocalDrop</div>
+    <ul>
+        <li data-page="cases">Skrzynki</li>
+        <li data-page="upgrader">Upgrader</li>
+        <li data-page="battles">Battles</li>
+        <li data-page="inventory">Ekwipunek</li>
+        <li class="balance">Saldo: $<span id="balance">0</span></li>
+    </ul>
+</nav>
+
+<div id="page-cases" class="page active">
+    <h1>Skrzynki</h1>
+    <div id="cases-container" class="grid"></div>
+</div>
+
+<div id="page-upgrader" class="page">
+    <h1>Upgrader</h1>
+    <div id="upgrader-root"></div>
+</div>
+
+<div id="page-battles" class="page">
+    <h1>Case Battles</h1>
+    <div id="battles-root"></div>
+</div>
+
+<div id="page-inventory" class="page">
+    <h1>Twój ekwipunek</h1>
+    <div id="inventory-container" class="inventory-grid"></div>
+</div>
+
+<div id="case-opening-modal" class="modal hidden">
+    <div class="modal-content">
+        <div id="rolling-strip"></div>
+    </div>
+</div>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
